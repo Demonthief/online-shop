@@ -67,7 +67,7 @@ export default function LoginPage() {
                  onChange={handleChange}
                  />
 
-                 <button className="w-full bg-black text-white py-3 rounded-lg">
+                 <button className="w-full bg-black text-white py-3 rounded-lg" type="submit">
                     Login
                  </button>
              </form>
