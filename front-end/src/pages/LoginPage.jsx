@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { loginUser } from "../services/authServices.js"
 
 export default function LoginPage() {
-
+    console.log("BUILD BARU")
     useEffect(() =>{
         const token = localStorage.getItem("token");
         
@@ -35,10 +35,12 @@ export default function LoginPage() {
             localStorage.setItem("token", data.token)
 
             localStorage.setItem("user", JSON.stringify(data.user))
+            console.log("HandleSubmit JALAN")
             alert('Berhasil Login')
             navigate("/dashboard")
         
         }catch(e){
+            console.log("HandleSubmit JALAN")
             alert('Gagal Login')
         }
     }
