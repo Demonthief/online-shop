@@ -50,7 +50,7 @@ export default function LoginPage() {
                 Logo
              </h1>
 
-             <form className="space-y-4" onSubmit={handleSubmit}>
+             <div className="space-y-4" >
                 <input
                  type="email" 
                  placeholder="E-mail"
@@ -67,10 +67,10 @@ export default function LoginPage() {
                  onChange={handleChange}
                  />
 
-                 <button className="w-full bg-black text-white py-3 rounded-lg" type="submit">
+                 <button className="w-full bg-black text-white py-3 rounded-lg" type="submit" onClick={handleSubmit}>
                     Login
                  </button>
-             </form>
+             </div>
             </div>
         </div>
     )
