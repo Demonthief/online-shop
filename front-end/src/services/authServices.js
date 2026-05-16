@@ -9,5 +9,6 @@ export const registerUser = async (userData) =>{
 export const loginUser = async (userData) =>{
     const response = await api.post("/auth/login", userData)
 
+    console.log("LOGIN SERVICE RUNNING")
     return response.data
 }
