@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
-import { loginUser } from "../services/authServices"
+import { loginUser } from "../services/authServices.js"
 
 export default function LoginPage() {
 
