@@ -28,7 +28,7 @@ export default function LoginPage() {
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        console.log(formData)
+        
         try{
             const data = await loginUser(formData)
             
